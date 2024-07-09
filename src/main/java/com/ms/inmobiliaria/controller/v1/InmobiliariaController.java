@@ -20,7 +20,7 @@ public class InmobiliariaController {
         this.inmobiliariaService = inmobiliariaService;
     }
 
-    @PostMapping
+    @PostMapping("/inmobiliario")
     public ResponseEntity<InmobiliariaEntity> create(@RequestBody @Valid InmobiliariaDto inmobiliariaDto){
         return this.inmobiliariaService.save(inmobiliariaDto);
     }
